@@ -1,0 +1,26 @@
+{
+    "name": "[file_name]",
+    "duration": "[duration]",
+	"video_streams": [
+        {
+            "stream_id": "[stream_id]",
+            "bitrate": "[bitrate]",
+            "fps":"[frames_per_second]",
+            "resolution":"[resolution]"
+        }
+    ],
+    "audio_streams": [
+        {
+            "stream_id": "[stream_id]",
+            "language": "[language]",
+            "sample_rate": "[sample_rate]",
+            "format": "[format]"
+        }
+    ],
+    "caption_streams": [
+        {
+            "stream_id": "[stream_id]",
+            "language": "[language]"
+        }
+    ]
+}
