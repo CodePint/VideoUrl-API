@@ -1,1 +1,42 @@
-{"name":"sample_1.mp4","duration":37.037,"video_streams":[{"stream_id":4,"bitrate":"861124","fps":"24000/1001","resolution":"960x400"},{"stream_id":5,"bitrate":"1443777","fps":"24000/1001","resolution":"1280x720"}],"audio_streams":[{"stream_id":0,"language":"cat","sample_rate":"48000","format":"aac"},{"stream_id":1,"language":"eng","sample_rate":"48000","format":"aac"}],"caption_streams":[{"stream_id":2,"language":"pol"},{"stream_id":3,"language":"spa"}]}
+{
+  "name": "sample_1.mp4",
+  "duration": 37.037,
+  "video_streams": [
+    {
+      "stream_id": 4,
+      "bitrate": "861124",
+      "fps": "24000/1001",
+      "resolution": "960x400"
+    },
+    {
+      "stream_id": 5,
+      "bitrate": "1443777",
+      "fps": "24000/1001",
+      "resolution": "1280x720"
+    }
+  ],
+  "audio_streams": [
+    {
+      "stream_id": 0,
+      "language": "cat",
+      "sample_rate": "48000",
+      "format": "aac"
+    },
+    {
+      "stream_id": 1,
+      "language": "eng",
+      "sample_rate": "48000",
+      "format": "aac"
+    }
+  ],
+  "caption_streams": [
+    {
+      "stream_id": 2,
+      "language": "pol"
+    },
+    {
+      "stream_id": 3,
+      "language": "spa"
+    }
+  ]
+}

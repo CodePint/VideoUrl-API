@@ -63,11 +63,11 @@ end
 # using URI to parse URL first, this should allow filename discovery in atypical URLs
 # buidling the datastucture to be converted into JSON
 
-def construct_data(stream, url)
-  stream_data = extract_stream_data(stream)
+def construct_data(sample, url)
+  stream_data = extract_stream_data(sample)
   data = {
     name: File.basename(URI.parse(url).path),  
-    duration: stream.duration,
+    duration: sample.duration,
     video_streams: stream_data[:video_streams],
     audio_streams: stream_data[:audio_streams],
     caption_streams: stream_data[:caption_streams]
@@ -77,7 +77,7 @@ end
 
 # calling methods and construction/saving as JSON
 extracted_data = construct_data(sample_1, sample_url_1)
-File.write("sample_1.json", extracted_data.to_json)
+File.write("sample_1.json", JSON.pretty_generate(extracted_data))
 binding.pry
 puts "break"
 
