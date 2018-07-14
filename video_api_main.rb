@@ -12,6 +12,8 @@ module Metadata
     attr_accessor :resource_location, :ffmpeg_object, :extracted_metadata, :video_streams, :audio_streams, :caption_streams
 
     def initialize(resource)
+      # creating a new directory for the JSON to be saved (if it doesnt already exist)
+      FileUtils.mkdir_p "JSON_META_STORE"
       # setting the resource location
       @resource_location = resource
       # Creating new FFMPEG instance
@@ -72,9 +74,9 @@ module Metadata
       }
     end
 
-    # convert to JSON, prettify it, save to local directors
+    # convert to JSON, prettify it, save to JSON META directory
     def save_json(filename)
-      File.write(filename, JSON.pretty_generate(@extracted_metadata))
+      File.write("JSON_META_STORE/"+filename, JSON.pretty_generate(@extracted_metadata))
     end
 
   end
