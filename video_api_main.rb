@@ -75,6 +75,7 @@ def construct_data(stream, url)
   return data
 end
 
+# calling methods and construction/saving as JSON
 extracted_data = construct_data(sample_1, sample_url_1)
 File.write("sample_1.json", extracted_data.to_json)
 binding.pry
