@@ -1,0 +1,56 @@
+{
+  "name": "sample_2.mp4",
+  "duration": 2.992,
+  "video_streams": [
+    {
+      "stream_id": 2,
+      "bitrate": "330260",
+      "fps": "25/1",
+      "resolution": "400x224"
+    },
+    {
+      "stream_id": 3,
+      "bitrate": "698444",
+      "fps": "25/1",
+      "resolution": "640x360"
+    },
+    {
+      "stream_id": 4,
+      "bitrate": "911668",
+      "fps": "25/1",
+      "resolution": "640x360"
+    },
+    {
+      "stream_id": 5,
+      "bitrate": "1291312",
+      "fps": "25/1",
+      "resolution": "768x432"
+    },
+    {
+      "stream_id": 6,
+      "bitrate": "2150684",
+      "fps": "25/1",
+      "resolution": "1280x720"
+    },
+    {
+      "stream_id": 7,
+      "bitrate": "2697100",
+      "fps": "25/1",
+      "resolution": "1280x720"
+    }
+  ],
+  "audio_streams": [
+    {
+      "stream_id": 1,
+      "language": "dan",
+      "sample_rate": "48000",
+      "format": "aac"
+    }
+  ],
+  "caption_streams": [
+    {
+      "stream_id": 0,
+      "language": "dan"
+    }
+  ]
+}
