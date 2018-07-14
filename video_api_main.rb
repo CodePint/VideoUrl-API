@@ -66,8 +66,7 @@ sample_1_result = {
 }
 
 
-sample_1_result_json = sample_1_result.to_json
-File.write
+File.write("sample_1.json", sample_1_result.to_json)
 binding.pry
 puts "break"
 
