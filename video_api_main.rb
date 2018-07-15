@@ -63,10 +63,11 @@ module Metadata
     def build_metadata
     # running the extract data method
       extract_metadata
+      binding.pry
 
     # using URI to parse URL first, this should allow filename discovery in atypical URLs
       @extracted_metadata = {
-        name: File.basename(URI.parse(resource_location).path),  
+        name: File.basename(URI.parse(@resource_location).path),  
         duration: ffmpeg_object.duration,
         video_streams: @video_streams,
         audio_streams: @audio_streams,
